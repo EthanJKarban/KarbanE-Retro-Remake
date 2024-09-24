@@ -1273,7 +1273,7 @@ GameObject:
   - component: {fileID: 941408566}
   - component: {fileID: 941408570}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1385,13 +1385,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941408565}
-  m_LocalRotation: {x: -0, y: -0.0022106138, z: -0, w: 0.99999756}
-  m_LocalPosition: {x: 12.3731, y: 1.2531, z: -0.978}
-  m_LocalScale: {x: 3.7693, y: 3.7693, z: 1}
+  m_LocalRotation: {x: -0, y: -0.0022106136, z: -1.8189894e-12, w: 0.99999756}
+  m_LocalPosition: {x: 12.3731, y: 1.2530997, z: -0.978}
+  m_LocalScale: {x: 3.7692997, y: 3.7693, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -0.253, z: 0}
 --- !u!114 &941408570
 MonoBehaviour:
@@ -3877,7 +3877,7 @@ GameObject:
   - component: {fileID: 1650698508}
   - component: {fileID: 1650698507}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Not important
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3974,7 +3974,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
 --- !u!1 &1757693104
 GameObject:
@@ -4092,6 +4092,7 @@ GameObject:
   - component: {fileID: 1938527995}
   - component: {fileID: 1938527994}
   - component: {fileID: 1938527996}
+  - component: {fileID: 1938527997}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4107,7 +4108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938527991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.94, y: 4.26, z: 0}
+  m_LocalPosition: {x: -6, y: 4, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4176,3 +4177,19 @@ MonoBehaviour:
   spriteRendererDown: {fileID: 1379809375}
   spriteRendererLeft: {fileID: 1063457433}
   spriteRendererRight: {fileID: 1757693108}
+--- !u!114 &1938527997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938527991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d44a27a4b93c78449a019dfe5234ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 7065634106705427700, guid: 091bdec7e3e70f849ac6cbc61b1c25ea, type: 3}
+  inputKey: 32
+  bombFuseTime: 3
+  bombAmount: 2
