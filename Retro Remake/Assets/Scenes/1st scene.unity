@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 154103104}
   - component: {fileID: 154103106}
   m_Layer: 6
-  m_Name: Destructables
+  m_Name: Destructible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8505,6 +8505,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 761ea48f098abc0469a1ed10d1734042, type: 2}
   - m_RefCount: 70
     m_Data: {fileID: 11400000, guid: 0ecd75eb72aeb3d4880a7edf9495a959, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 43
     m_Data: {fileID: -1809650006, guid: 6dd258d043c57a14ebde184036be9ff3, type: 3}
@@ -8512,6 +8514,8 @@ Tilemap:
     m_Data: {fileID: -1508100077, guid: 6dd258d043c57a14ebde184036be9ff3, type: 3}
   - m_RefCount: 70
     m_Data: {fileID: 1345796860, guid: 6dd258d043c57a14ebde184036be9ff3, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 195
     m_Data:
@@ -8538,7 +8542,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -10, y: -10, z: 0}
-  m_Size: {x: 17, y: 15, z: 1}
+  m_Size: {x: 23, y: 19, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -8910,7 +8914,7 @@ GameObject:
   - component: {fileID: 1938527997}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9009,5 +9013,10 @@ MonoBehaviour:
   bombFuseTime: 3
   bombAmount: 2
   explosionPrefab: {fileID: -8566632054440701296, guid: 230cb01b92b8c454885b1aa4a60d4508, type: 3}
+  explosionLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
   explosionDuration: 1
-  explosionRadius: 1
+  explosionRadius: 2
+  destructibleTiles: {fileID: 154103105}
+  destructiblePrefab: {fileID: 2899080547624397777, guid: 7a9b1bf7e83656a4f86f441178527967, type: 3}
