@@ -20,6 +20,7 @@ public class MovementController : MonoBehaviour
     public AnimatedSpriteRenderer spriteRendererDown;
     public AnimatedSpriteRenderer spriteRendererLeft;
     public AnimatedSpriteRenderer spriteRendererRight;
+    public AnimatedSpriteRenderer spriteRendererDeath;
     private AnimatedSpriteRenderer activeSpriteRenderer;
 
 
@@ -92,10 +93,17 @@ public class MovementController : MonoBehaviour
         spriteRendererDown.enabled = false;
         spriteRendererLeft.enabled = false;
         spriteRendererRight.enabled =false;
+        spriteRendererDeath.enabled = true;
+
+        Invoke(nameof(OnDeathSequenceEnded), 1.25f);
     }
 
 
-
+    private void OnDeathSequenceEnded()
+    {
+        gameObject.SetActive(false);
+        FindObjectOfType<GameManager>().CheckWinState();
+    }
 
 
 
