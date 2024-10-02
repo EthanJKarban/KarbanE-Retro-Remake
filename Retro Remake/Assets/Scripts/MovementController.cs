@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+using UnityEditor.Experimental;    //.GraphView
 using UnityEditor.Rendering;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
     
-        public new Rigidbody2D rigidbody { get; private set; }
+        public new Rigidbody2D rigidbody { get; private set;}
         private Vector2 direction = Vector2.down;
         public float speed = 5f;
 
